@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>My First Blog | ziyao&#39;s Blog</title>
+  <title>php防止用户重复刷新页面 | ziyao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="/代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;/
+//设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[“num”] &amp;gt; $maxNum) echo(“alert(‘您的访问过于频繁，请稍">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First Blog">
-<meta property="og:url" content="http://chinaweb.github.io/2015/06/08/My First Blog/index.html">
+<meta property="og:title" content="php防止用户重复刷新页面">
+<meta property="og:url" content="http://chinaweb.github.io/2015/06/08/php防止用户重复刷新页面/index.html">
 <meta property="og:site_name" content="ziyao's Blog">
-<meta property="og:description">
-<meta property="og:updated_time" content="2015-06-08T08:18:49.247Z">
+<meta property="og:description" content="/代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;/
+//设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[“num”] &amp;gt; $maxNum) echo(“alert(‘您的访问过于频繁，请稍">
+<meta property="og:updated_time" content="2015-06-08T11:32:15.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My First Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="php防止用户重复刷新页面">
+<meta name="twitter:description" content="/代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;/
+//设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[“num”] &amp;gt; $maxNum) echo(“alert(‘您的访问过于频繁，请稍">
   
     <link rel="alternative" href="/atom.xml" title="ziyao&#39;s Blog" type="application/atom+xml">
   
@@ -184,11 +187,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-My First Blog" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/08/My First Blog/" class="article-date">
-  	<time datetime="2015-06-08T11:10:23.490Z" itemprop="datePublished">6月 8 2015</time>
+      <a href="/2015/06/08/php防止用户重复刷新页面/" class="article-date">
+  	<time datetime="2015-06-08T11:32:23.646Z" itemprop="datePublished">6月 8 2015</time>
 </a>
     </div>
   
@@ -201,7 +204,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      My First Blog
+      php防止用户重复刷新页面
     </h1>
   
 
@@ -217,7 +220,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>/<em>代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;</em>/</p>
+<p>//设定cookie存活时间<br>$liveTime = 60;<br>//在$liveTime时间里刷新的最大次数<br>$maxNum   = 10;<br>//cookie的liveTime存活时间里再次访问，则会自动跳转<br>if($_COOKIE[“num”] &gt; $maxNum) echo(“<script>alert(‘您的访问过于频繁，请稍后访问！’)</script>“);<br>// 设置cookie<br>setcookie(“user”,”1”,time()+$liveTime);<br>$num = $_COOKIE[‘num’];<br>$num = empty($num) ? 1 : ($_COOKIE[‘num’] + 1);<br>setcookie(“num”, $num,time()+$liveTime);</p>
+
         
       
     </div>
@@ -248,7 +253,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="My First Blog" data-title="My First Blog" data-url="http://chinaweb.github.io/2015/06/08/My First Blog/"></div>
+	<div class="ds-thread" data-thread-key="php防止用户重复刷新页面" data-title="php防止用户重复刷新页面" data-url="http://chinaweb.github.io/2015/06/08/php防止用户重复刷新页面/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

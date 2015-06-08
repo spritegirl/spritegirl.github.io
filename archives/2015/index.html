@@ -185,11 +185,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-My First Blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/08/My First Blog/" class="article-date">
-  	<time datetime="2015-06-08T11:10:23.490Z" itemprop="datePublished">6月 8 2015</time>
+      <a href="/2015/06/08/php防止用户重复刷新页面/" class="article-date">
+  	<time datetime="2015-06-08T11:32:23.646Z" itemprop="datePublished">6月 8 2015</time>
 </a>
     </div>
   
@@ -202,7 +202,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/My First Blog/">My First Blog</a>
+      <a class="article-title" href="/2015/06/08/php防止用户重复刷新页面/">php防止用户重复刷新页面</a>
     </h1>
   
 
@@ -211,7 +211,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>/<em>代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;</em>/</p>
+<p>//设定cookie存活时间<br>$liveTime = 60;<br>//在$liveTime时间里刷新的最大次数<br>$maxNum   = 10;<br>//cookie的liveTime存活时间里再次访问，则会自动跳转<br>if($_COOKIE[“num”] &gt; $maxNum) echo(“<script>alert(‘您的访问过于频繁，请稍后访问！’)</script>“);<br>// 设置cookie<br>setcookie(“user”,”1”,time()+$liveTime);<br>$num = $_COOKIE[‘num’];<br>$num = empty($num) ? 1 : ($_COOKIE[‘num’] + 1);<br>setcookie(“num”, $num,time()+$liveTime);</p>
+
         
           <!-- show an end symbol if the article is fully displayed -->
           <hr/>
