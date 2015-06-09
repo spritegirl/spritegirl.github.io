@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | ziyao&#39;s Blog</title>
+  <title>Tag: 大banner居中 | ziyao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ziyao's Blog">
-<meta property="og:url" content="http://chinaweb.github.io/archives/2015/index.html">
+<meta property="og:url" content="http://chinaweb.github.io/tags/大banner居中/index.html">
 <meta property="og:site_name" content="ziyao's Blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -245,129 +245,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/htmlcss/">htmlcss</a>
-	</div>
-
-
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="post-常见前端面试题集锦" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/09/常见前端面试题集锦/" class="article-date">
-  	<time datetime="2015-06-09T05:34:28.247Z" itemprop="datePublished">6月 9 2015</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/09/常见前端面试题集锦/">常见前端面试题集锦</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~">本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~</h2><p><ol><br>    <li>什么是HTML？</li><br>    <li>DOCTYPE的作用？严格模式与混杂模式，如何触发？</li><br>    <li>HTML语义化，以及好处。</li><br>    <li>HTML5新增的几个标签，flash和HTML5的优缺点。</li><br>    <li>ol dl ul 是什么东东？</li><br>    <li>对WEB标准的理解。</li><br>    <li>什么是web components？</li><br>    <li>HTTP请求有哪几种方法？HTTP报文理解一下。HTTP握手？</li><br>
-        <hr/>
-        <p class="article-more-link">
-          <a  href="/2015/06/09/常见前端面试题集锦/#more">more >></a>
-        </p>
-      
-    </div>
-    
-    <div class="article-info">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端面试题/">前端面试题</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/前端/">前端</a>
-	</div>
-
-
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/09/php防止用户重复刷新页面/" class="article-date">
-  	<time datetime="2015-06-09T05:32:52.488Z" itemprop="datePublished">6月 9 2015</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/09/php防止用户重复刷新页面/">php防止用户重复刷新页面</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*代码解释：在<span class="variable">$liveTime</span>时间里如果用户刷新共计超过<span class="variable">$maxNum</span>次便跳转*/</span><br><span class="line">        </span><br><span class="line">//设定cookie存活时间</span><br><span class="line"><span class="variable">$liveTime</span> = <span class="number">60</span>;</span><br><span class="line">//在<span class="variable">$liveTime</span>时间里刷新的最大次数</span><br><span class="line"><span class="variable">$maxNum</span>   = <span class="number">10</span>;</span><br><span class="line">//cookie的liveTime存活时间里再次访问，则会自动跳转</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">"num"</span>] &gt; <span class="variable">$maxNum</span>) <span class="built_in">echo</span>(<span class="string">"&lt;script&gt;alert('您的访问过于频繁，请稍后访问！')&lt;/script&gt;"</span>);</span><br><span class="line">// 设置cookie</span><br><span class="line">setcookie(<span class="string">"user"</span>,<span class="string">"1"</span>,time()+<span class="variable">$liveTime</span>);</span><br><span class="line"><span class="variable">$num</span> = <span class="variable">$_COOKIE</span>[<span class="string">'num'</span>];</span><br><span class="line"><span class="variable">$num</span> = empty(<span class="variable">$num</span>) ? <span class="number">1</span> : (<span class="variable">$_COOKIE</span>[<span class="string">'num'</span>] + <span class="number">1</span>);</span><br><span class="line">setcookie(<span class="string">"num"</span>, <span class="variable">$num</span>,time()+<span class="variable">$liveTime</span>);</span><br></pre></td></tr></table></figure>
-<p>代码片段来自：<a href="http://www.wangmumu.net/" target="_blank" rel="external">http://www.wangmumu.net/</a></p>
-
-        
-          <!-- show an end symbol if the article is fully displayed -->
-          <hr/>
-          <p class="article-more-link">
-            <a>end</a>
-          </p>
-        
-      
-    </div>
-    
-    <div class="article-info">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php防刷新/">php防刷新</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/php/">php</a>
 	</div>
 
 

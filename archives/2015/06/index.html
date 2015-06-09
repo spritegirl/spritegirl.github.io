@@ -93,7 +93,7 @@
 				        
 							<li><a href="/JavaScript/">JavaScript</a></li>
 				        
-							<li><a href="/htmlcss/">HTML+CSS</a></li>
+							<li><a href="/htmlcss/">前端</a></li>
 				        
 							<li><a href="/php/">php</a></li>
 				        
@@ -119,7 +119,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/php防刷新/" style="font-size: 10px;">php防刷新</a> <a href="/tags/前端面试题/" style="font-size: 10px;">前端面试题</a>
+						<a href="/tags/php防刷新/" style="font-size: 10px;">php防刷新</a> <a href="/tags/前端面试题/" style="font-size: 10px;">前端面试题</a> <a href="/tags/大banner居中/" style="font-size: 10px;">大banner居中</a>
 					</div>
 				</section>
 				
@@ -170,7 +170,7 @@
 		        
 					<li><a href="/JavaScript/">JavaScript</a></li>
 		        
-					<li><a href="/htmlcss/">HTML+CSS</a></li>
+					<li><a href="/htmlcss/">前端</a></li>
 		        
 					<li><a href="/php/">php</a></li>
 		        
@@ -196,6 +196,70 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-让超大banner图片不拉伸、全屏宽、居中显示的方法" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/09/让超大banner图片不拉伸、全屏宽、居中显示的方法/" class="article-date">
+  	<time datetime="2015-06-09T11:20:02.885Z" itemprop="datePublished">6月 9 2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/09/让超大banner图片不拉伸、全屏宽、居中显示的方法/">让超大banner图片不拉伸、全屏宽、居中显示的方法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;让超大banner图片不拉伸、全屏宽、居中显示的方法&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .bannerbox &#123;</span><br><span class="line">            width:<span class="number">100</span>%;</span><br><span class="line">            position:relative;</span><br><span class="line">            overflow:hidden;</span><br><span class="line">            height:<span class="number">525</span>px;/*banner高度*/</span><br><span class="line">        &#125;</span><br><span class="line">        .banner &#123;</span><br><span class="line">            width:<span class="number">1600</span>px;/*banner宽度*/</span><br><span class="line">            position:absolute;</span><br><span class="line">            left:<span class="number">50</span>%;</span><br><span class="line">            margin-left:-<span class="number">800</span>px;/*负banner宽度的一半*/</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"bannerbox"</span>&gt;</span><br><span class="line">        &lt;div class=<span class="string">"banner"</span>&gt;</span><br><span class="line">            &lt;img src=<span class="string">"banner.jpg"</span>&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt; </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>注：把css中 .bannerbox 中 height 及 .banner 和 width 换成你banner图的大小，然后 .banner 中margin-left 的值改成banner图宽度的一半即可。</p>
+
+        
+          <!-- show an end symbol if the article is fully displayed -->
+          <hr/>
+          <p class="article-more-link">
+            <a>end</a>
+          </p>
+        
+      
+    </div>
+    
+    <div class="article-info">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大banner居中/">大banner居中</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/htmlcss/">htmlcss</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
   
     <article id="post-常见前端面试题集锦" class="article article-type-post" itemscope itemprop="blogPost">
   
