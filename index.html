@@ -185,11 +185,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-常见前端面试题集锦" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/08/php防止用户重复刷新页面/" class="article-date">
-  	<time datetime="2015-06-08T11:32:23.646Z" itemprop="datePublished">6月 8 2015</time>
+      <a href="/2015/06/09/常见前端面试题集锦/" class="article-date">
+  	<time datetime="2015-06-09T03:53:54.883Z" itemprop="datePublished">6月 9 2015</time>
 </a>
     </div>
   
@@ -202,7 +202,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/php防止用户重复刷新页面/">php防止用户重复刷新页面</a>
+      <a class="article-title" href="/2015/06/09/常见前端面试题集锦/">php防止用户重复刷新页面</a>
     </h1>
   
 
@@ -211,8 +211,59 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>/<em>代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转 ;</em>/</p>
-<p>//设定cookie存活时间<br>$liveTime = 60;<br>//在$liveTime时间里刷新的最大次数<br>$maxNum   = 10;<br>//cookie的liveTime存活时间里再次访问，则会自动跳转<br>if($_COOKIE[“num”] &gt; $maxNum) echo(“<script>alert(‘您的访问过于频繁，请稍后访问！’)</script>“);<br>// 设置cookie<br>setcookie(“user”,”1”,time()+$liveTime);<br>$num = $_COOKIE[‘num’];<br>$num = empty($num) ? 1 : ($_COOKIE[‘num’] + 1);<br>setcookie(“num”, $num,time()+$liveTime);</p>
+        <h2 id="本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~">本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~</h2><p><ol><br>    <li>什么是HTML？</li><br>    <li>DOCTYPE的作用？严格模式与混杂模式，如何触发？</li><br>    <li>HTML语义化，以及好处。</li><br>    <li>HTML5新增的几个标签，flash和HTML5的优缺点。</li><br>    <li>ol dl ul 是什么东东？</li><br>    <li>对WEB标准的理解。</li><br>    <li>什么是web components？</li><br>    <li>HTTP请求有哪几种方法？HTTP报文理解一下。HTTP握手？</li><br>    <li>ajax是什么？由哪几种技术组成？ajax的优缺点？服务器怎么判断请求是一个ajax请求？不同浏览器之间创建xhr 差异？</li><br>    <li>浏览器的缓存策略，啥是协商缓存？</li><br>    <li>HTTP状态码，200 302 304 403 404 500….</li><br>
+        <hr/>
+        <p class="article-more-link">
+          <a  href="/2015/06/09/常见前端面试题集锦/#more">more >></a>
+        </p>
+      
+    </div>
+    
+    <div class="article-info">
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/09/php防止用户重复刷新页面/" class="article-date">
+  	<time datetime="2015-06-09T03:48:16.068Z" itemprop="datePublished">6月 9 2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/09/php防止用户重复刷新页面/">php防止用户重复刷新页面</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*代码解释：在<span class="variable">$liveTime</span>时间里如果用户刷新共计超过<span class="variable">$maxNum</span>次便跳转*/</span><br><span class="line">        </span><br><span class="line">//设定cookie存活时间</span><br><span class="line"><span class="variable">$liveTime</span> = <span class="number">60</span>;</span><br><span class="line">//在<span class="variable">$liveTime</span>时间里刷新的最大次数</span><br><span class="line"><span class="variable">$maxNum</span>   = <span class="number">10</span>;</span><br><span class="line">//cookie的liveTime存活时间里再次访问，则会自动跳转</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">"num"</span>] &gt; <span class="variable">$maxNum</span>) <span class="built_in">echo</span>(<span class="string">"&lt;script&gt;alert('您的访问过于频繁，请稍后访问！')&lt;/script&gt;"</span>);</span><br><span class="line">// 设置cookie</span><br><span class="line">setcookie(<span class="string">"user"</span>,<span class="string">"1"</span>,time()+<span class="variable">$liveTime</span>);</span><br><span class="line"><span class="variable">$num</span> = <span class="variable">$_COOKIE</span>[<span class="string">'num'</span>];</span><br><span class="line"><span class="variable">$num</span> = empty(<span class="variable">$num</span>) ? <span class="number">1</span> : (<span class="variable">$_COOKIE</span>[<span class="string">'num'</span>] + <span class="number">1</span>);</span><br><span class="line">setcookie(<span class="string">"num"</span>, <span class="variable">$num</span>,time()+<span class="variable">$liveTime</span>);</span><br></pre></td></tr></table></figure>
+<p>代码片段来自：<a href="http://www.wangmumu.net/" target="_blank" rel="external">http://www.wangmumu.net/</a></p>
 
         
           <!-- show an end symbol if the article is fully displayed -->
