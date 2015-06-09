@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: php防刷新 | ziyao&#39;s Blog</title>
+  <title>Tag: js随机数 | ziyao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ziyao's Blog">
-<meta property="og:url" content="http://chinaweb.github.io/tags/php防刷新/index.html">
+<meta property="og:url" content="http://chinaweb.github.io/tags/js随机数/index.html">
 <meta property="og:site_name" content="ziyao's Blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -197,11 +197,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-js和jQuery中常用的随机数产生函数" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/09/php防止用户重复刷新页面/" class="article-date">
-  	<time datetime="2015-06-09T05:32:52.488Z" itemprop="datePublished">6月 9 2015</time>
+      <a href="/2015/06/09/js和jQuery中常用的随机数产生函数/" class="article-date">
+  	<time datetime="2015-06-09T11:32:52.653Z" itemprop="datePublished">6月 9 2015</time>
 </a>
     </div>
   
@@ -214,7 +214,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/09/php防止用户重复刷新页面/">php防止用户重复刷新页面</a>
+      <a class="article-title" href="/2015/06/09/js和jQuery中常用的随机数产生函数/">常见前端面试题集锦</a>
     </h1>
   
 
@@ -223,9 +223,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*代码解释：在<span class="variable">$liveTime</span>时间里如果用户刷新共计超过<span class="variable">$maxNum</span>次便跳转*/</span><br><span class="line">        </span><br><span class="line">//设定cookie存活时间</span><br><span class="line"><span class="variable">$liveTime</span> = <span class="number">60</span>;</span><br><span class="line">//在<span class="variable">$liveTime</span>时间里刷新的最大次数</span><br><span class="line"><span class="variable">$maxNum</span>   = <span class="number">10</span>;</span><br><span class="line">//cookie的liveTime存活时间里再次访问，则会自动跳转</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">"num"</span>] &gt; <span class="variable">$maxNum</span>) <span class="built_in">echo</span>(<span class="string">"&lt;script&gt;alert('您的访问过于频繁，请稍后访问！')&lt;/script&gt;"</span>);</span><br><span class="line">// 设置cookie</span><br><span class="line">setcookie(<span class="string">"user"</span>,<span class="string">"1"</span>,time()+<span class="variable">$liveTime</span>);</span><br><span class="line"><span class="variable">$num</span> = <span class="variable">$_COOKIE</span>[<span class="string">'num'</span>];</span><br><span class="line"><span class="variable">$num</span> = empty(<span class="variable">$num</span>) ? <span class="number">1</span> : (<span class="variable">$_COOKIE</span>[<span class="string">'num'</span>] + <span class="number">1</span>);</span><br><span class="line">setcookie(<span class="string">"num"</span>, <span class="variable">$num</span>,time()+<span class="variable">$liveTime</span>);</span><br></pre></td></tr></table></figure>
-<p>代码片段来自：<a href="http://www.wangmumu.net/" target="_blank" rel="external">http://www.wangmumu.net/</a></p>
-
+        <p>无论在普通Js框架或者JQuery中都可以使用的，函数如下，使用方法简介：</p>
+<p>1）获取0-100的随机数——getRandom(100);</p>
+<p>2）获取0-999的随机数——getRandom(999);</p>
+<p>3）以此类推…</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="keyword">function</span> getRandom(n)&#123;</span><br><span class="line">	   <span class="built_in">return</span> Math.floor(Math.random()*n+<span class="number">1</span>)</span><br><span class="line">	&#125;;</span><br><span class="line">	var num=getRandom(<span class="number">100</span>);</span><br><span class="line">	console.log(num);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
         
           <!-- show an end symbol if the article is fully displayed -->
           <hr/>
@@ -239,12 +241,12 @@
     <div class="article-info">
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php防刷新/">php防刷新</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js随机数/">js随机数</a></li></ul>
 	</div>
 
       
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/php/">php</a>
+	<a class="article-category-link" href="/JavaScript/">JavaScript</a>
 	</div>
 
 
