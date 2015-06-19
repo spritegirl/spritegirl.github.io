@@ -866,7 +866,7 @@ a {
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #657b83;
+  text-shadow: 0px 1px 1px #55ea78;
 }
 .article-inner {
   position: relative;
