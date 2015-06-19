@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>php防止用户重复刷新页面 | ziyao&#39;s Blog</title>
+  <title>Tag: sublime | ziyao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="php防止用户重复刷新页面">
-<meta property="og:url" content="http://chinaweb.github.io/2015/06/09/php防止用户重复刷新页面/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ziyao's Blog">
+<meta property="og:url" content="http://chinaweb.github.io/tags/sublime/index.html">
 <meta property="og:site_name" content="ziyao's Blog">
-<meta property="og:description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
-<meta property="og:updated_time" content="2015-06-09T05:32:52.488Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php防止用户重复刷新页面">
-<meta name="twitter:description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
+<meta name="twitter:title" content="ziyao's Blog">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="ziyao&#39;s Blog" type="application/atom+xml">
   
@@ -200,11 +199,13 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
+  
+    <article id="post-常用的几个sublime插件" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/09/php防止用户重复刷新页面/" class="article-date">
-  	<time datetime="2015-06-09T05:32:52.488Z" itemprop="datePublished">6月 9 2015</time>
+      <a href="/2015/06/19/常用的几个sublime插件/" class="article-date">
+  	<time datetime="2015-06-19T05:01:56.181Z" itemprop="datePublished">6月 19 2015</time>
 </a>
     </div>
   
@@ -216,97 +217,55 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      php防止用户重复刷新页面
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/19/常用的几个sublime插件/">常用的几个sublime插件</a>
     </h1>
   
 
       </header>
       
-      <div class="article-info">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php防刷新/">php防刷新</a></li></ul>
-	</div>
-
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/php/">php</a>
-	</div>
-
-
-        <div class="clearfix"></div>
-      </div>
-      
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*代码解释：在<span class="variable">$liveTime</span>时间里如果用户刷新共计超过<span class="variable">$maxNum</span>次便跳转*/</span><br><span class="line">        </span><br><span class="line">//设定cookie存活时间</span><br><span class="line"><span class="variable">$liveTime</span> = <span class="number">60</span>;</span><br><span class="line">//在<span class="variable">$liveTime</span>时间里刷新的最大次数</span><br><span class="line"><span class="variable">$maxNum</span>   = <span class="number">10</span>;</span><br><span class="line">//cookie的liveTime存活时间里再次访问，则会自动跳转</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">"num"</span>] &gt; <span class="variable">$maxNum</span>) <span class="built_in">echo</span>(<span class="string">"&lt;script&gt;alert('您的访问过于频繁，请稍后访问！')&lt;/script&gt;"</span>);</span><br><span class="line">// 设置cookie</span><br><span class="line">setcookie(<span class="string">"user"</span>,<span class="string">"1"</span>,time()+<span class="variable">$liveTime</span>);</span><br><span class="line"><span class="variable">$num</span> = <span class="variable">$_COOKIE</span>[<span class="string">'num'</span>];</span><br><span class="line"><span class="variable">$num</span> = empty(<span class="variable">$num</span>) ? <span class="number">1</span> : (<span class="variable">$_COOKIE</span>[<span class="string">'num'</span>] + <span class="number">1</span>);</span><br><span class="line">setcookie(<span class="string">"num"</span>, <span class="variable">$num</span>,time()+<span class="variable">$liveTime</span>);</span><br></pre></td></tr></table></figure>
-<p>代码片段来自：<a href="http://www.wangmumu.net/" target="_blank" rel="external">http://www.wangmumu.net/</a></p>
-
-        
+        <p>1、Package Control</p>
+<p>2、jsformat js格式化</p>
+<p>3、ColorPicker </p>
+<p>4、ConvertToUTF8</p>
+<p>5、SublimeTmpl</p>
+<p>6、OmniMarkupPreviewer<br>
+        <hr/>
+        <p class="article-more-link">
+          <a  href="/2015/06/19/常用的几个sublime插件/#more">more >></a>
+        </p>
       
+    </div>
+    
+    <div class="article-info">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/sublime/">sublime</a>
+	</div>
+
+
+      <div class="clearfix"></div>
     </div>
     
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2015/06/09/让超大banner图片不拉伸、全屏宽、居中显示的方法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          让超大banner图片不拉伸、全屏宽、居中显示的方法
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
 
 
-<div class="share">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到：</span>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
 
 
 
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="php防止用户重复刷新页面" data-title="php防止用户重复刷新页面" data-url="http://chinaweb.github.io/2015/06/09/php防止用户重复刷新页面/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"ziyao"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
 
-
-
+  
+  
 </div>
       <footer id="footer">
   <div class="outer">
