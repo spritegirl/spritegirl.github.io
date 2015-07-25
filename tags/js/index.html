@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>php防止用户重复刷新页面 | web前端小屋</title>
+  <title>Tag: js | web前端小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="php防止用户重复刷新页面">
-<meta property="og:url" content="http://chinaweb.github.io/2015-07-03/php防止用户重复刷新页面/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="web前端小屋">
+<meta property="og:url" content="http://chinaweb.github.io/tags/js/index.html">
 <meta property="og:site_name" content="web前端小屋">
-<meta property="og:description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
-<meta property="og:updated_time" content="2015-06-19T05:17:36.007Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php防止用户重复刷新页面">
-<meta name="twitter:description" content="12345678910111213/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/        //设定cookie存活时间$liveTime = 60;//在$liveTime时间里刷新的最大次数$maxNum   = 10;//cookie的liveTime存活时间里再次访问，则会自动跳转if($_COOKIE[&quot;num&quot;] &amp;gt; $maxNum)">
+<meta name="twitter:title" content="web前端小屋">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="web前端小屋" type="application/atom+xml">
   
@@ -200,11 +199,13 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-php防止用户重复刷新页面" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
+  
+    <article id="post-document.ready=function(){}和$(function(){})和window.onload=function(){}区别" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015-07-03/php防止用户重复刷新页面/" class="article-date">
-  	<time datetime="2015-07-03T12:38:03.680Z" itemprop="datePublished">7月 3 2015</time>
+      <a href="/2015-07-25/document.ready=function(){}和$(function(){})和window.onload=function(){}区别/" class="article-date">
+  	<time datetime="2015-07-25T11:20:34.271Z" itemprop="datePublished">7月 25 2015</time>
 </a>
     </div>
   
@@ -216,102 +217,80 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      php防止用户重复刷新页面
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015-07-25/document.ready=function(){}和$(function(){})和window.onload=function(){}区别/">document.ready=function(){}和$(function(){})和window.onload=function(){}区别</a>
     </h1>
   
 
       </header>
       
-      <div class="article-info">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php防刷新/">php防刷新</a></li></ul>
-	</div>
-
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/php/">php</a>
-	</div>
-
-
-        <div class="clearfix"></div>
-      </div>
-      
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*代码解释：在$liveTime时间里如果用户刷新共计超过$maxNum次便跳转*/</span></span><br><span class="line">        </span><br><span class="line"><span class="comment">//设定cookie存活时间</span></span><br><span class="line"><span class="variable">$liveTime</span> = <span class="number">60</span>;</span><br><span class="line"><span class="comment">//在$liveTime时间里刷新的最大次数</span></span><br><span class="line"><span class="variable">$maxNum</span>   = <span class="number">10</span>;</span><br><span class="line"><span class="comment">//cookie的liveTime存活时间里再次访问，则会自动跳转</span></span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">"num"</span>] &gt; <span class="variable">$maxNum</span>) <span class="keyword">echo</span>(<span class="string">"&lt;script&gt;alert('您的访问过于频繁，请稍后访问！')&lt;/script&gt;"</span>);</span><br><span class="line"><span class="comment">// 设置cookie</span></span><br><span class="line">setcookie(<span class="string">"user"</span>,<span class="string">"1"</span>,time()+<span class="variable">$liveTime</span>);</span><br><span class="line"><span class="variable">$num</span> = <span class="variable">$_COOKIE</span>[<span class="string">'num'</span>];</span><br><span class="line"><span class="variable">$num</span> = <span class="keyword">empty</span>(<span class="variable">$num</span>) ? <span class="number">1</span> : (<span class="variable">$_COOKIE</span>[<span class="string">'num'</span>] + <span class="number">1</span>);</span><br><span class="line">setcookie(<span class="string">"num"</span>, <span class="variable">$num</span>,time()+<span class="variable">$liveTime</span>);</span><br></pre></td></tr></table></figure>
-<p>代码片段来自：<a href="http://www.wangmumu.net/" target="_blank" rel="external">http://www.wangmumu.net/</a></p>
+        <p>一、window.onload=function(){};</p>
+<ol>
+<li>是js原生写法，意思是带文档完全加载完毕后再执行其中的代码。</li>
+<li>只能写一个，各种函数都可以写在这里面。</li>
+</ol>
+<p>二、$(function(){})</p>
+<ol>
+<li>是依赖于jQuery的，是$(document).ready(function(){})的简写。</li>
+<li>不需要等文档完全加载，只需文章结构加载完就能执行其中的代码。</li>
+<li>可以写多个，按顺序执行。</li>
+</ol>
+<p>三、document.ready=function(){}</p>
+<ol>
+<li>也是依赖于jQuery的。</li>
+<li><p>相当于$(function(){})，但优先级没有$(function(){})高。从下面的例子就可以看出：<br>```javascript<br><script><br> document.ready=function(){</p>
+<pre><code>alert(1)<span class="comment">;</span>
+</code></pre><p> };</p>
+<p> $(function(){</p>
+<pre><code>alert(2)<span class="comment">;</span>
+</code></pre><p> });</p>
+<p> $(function(){</p>
+<pre><code>alert(3)<span class="comment">;</span>
+</code></pre><p> });<br></script><br>```输出的顺序为3 2 1</p>
+</li>
+</ol>
+<p>四、(function(){})();</p>
+<p>注：如有不正确的地方和不完整之处，希望小伙伴们呢能给指正！</p>
 
+        
+          <!-- show an end symbol if the article is fully displayed -->
+          <hr/>
+          <p class="article-more-link">
+            <a>end</a>
+          </p>
         
       
     </div>
     
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015-07-03/常见前端面试题集锦/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          常见前端面试题集锦
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015-07-03/js和jQuery中常用的随机数产生函数/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js和jQuery中常用的随机数产生函数</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
+    <div class="article-info">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+	</div>
 
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/js/">js</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
   
 </article>
 
 
-<div class="share">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到：</span>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
 
 
 
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="php防止用户重复刷新页面" data-title="php防止用户重复刷新页面" data-url="http://chinaweb.github.io/2015-07-03/php防止用户重复刷新页面/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"ziyao"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
 
-
-
+  
+  
 </div>
       <footer id="footer">
   <div class="outer">
