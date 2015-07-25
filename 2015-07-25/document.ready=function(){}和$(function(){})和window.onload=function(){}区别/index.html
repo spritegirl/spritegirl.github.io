@@ -33,7 +33,7 @@
 可以写多个，按顺序执行。
 
 三、do">
-<meta property="og:updated_time" content="2015-07-25T11:20:34.271Z">
+<meta property="og:updated_time" content="2015-07-25T11:24:49.185Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="document.ready=function(){}和$(function(){})和window.onload=function(){}区别">
 <meta name="twitter:description" content="一、window.onload=function(){};
@@ -237,7 +237,7 @@
   
     <div class="article-meta">
       <a href="/2015-07-25/document.ready=function(){}和$(function(){})和window.onload=function(){}区别/" class="article-date">
-  	<time datetime="2015-07-25T11:20:34.271Z" itemprop="datePublished">7月 25 2015</time>
+  	<time datetime="2015-07-25T11:24:49.185Z" itemprop="datePublished">7月 25 2015</time>
 </a>
     </div>
   
@@ -288,17 +288,10 @@
 <p>三、document.ready=function(){}</p>
 <ol>
 <li>也是依赖于jQuery的。</li>
-<li><p>相当于$(function(){})，但优先级没有$(function(){})高。从下面的例子就可以看出：<br>```javascript<br><script><br> document.ready=function(){</p>
-<pre><code>alert(1)<span class="comment">;</span>
-</code></pre><p> };</p>
-<p> $(function(){</p>
-<pre><code>alert(2)<span class="comment">;</span>
-</code></pre><p> });</p>
-<p> $(function(){</p>
-<pre><code>alert(3)<span class="comment">;</span>
-</code></pre><p> });<br></script><br>```输出的顺序为3 2 1</p>
+<li>相当于$(function(){})，但优先级没有$(function(){})高。从下面的例子就可以看出：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="built_in">document</span>.ready=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">1</span>);</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">2</span>);</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">3</span>);</span><br><span class="line">	&#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<p>输出的顺序为3 2 1</p>
 <p>四、(function(){})();</p>
 <p>注：如有不正确的地方和不完整之处，希望小伙伴们呢能给指正！</p>
 
