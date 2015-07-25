@@ -6,48 +6,42 @@
   <title>document.ready=function(){}和$(function(){})和window.onload=function(){}区别 | web前端小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一、window.onload=function(){};
-
 是js原生写法，意思是带文档完全加载完毕后再执行其中的代码。
 只能写一个，各种函数都可以写在这里面。
 
 二、$(function(){})
-
 是依赖于jQuery的，是$(document).ready(function(){})的简写。
 不需要等文档完全加载，只需文章结构加载完就能执行其中的代码。
 可以写多个，按顺序执行。
 
-三、do">
+三、docu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="document.ready=function(){}和$(function(){})和window.onload=function(){}区别">
 <meta property="og:url" content="http://chinaweb.github.io/2015-07-25/document.ready=function(){}和$(function(){})和window.onload=function(){}区别/index.html">
 <meta property="og:site_name" content="web前端小屋">
 <meta property="og:description" content="一、window.onload=function(){};
-
 是js原生写法，意思是带文档完全加载完毕后再执行其中的代码。
 只能写一个，各种函数都可以写在这里面。
 
 二、$(function(){})
-
 是依赖于jQuery的，是$(document).ready(function(){})的简写。
 不需要等文档完全加载，只需文章结构加载完就能执行其中的代码。
 可以写多个，按顺序执行。
 
-三、do">
-<meta property="og:updated_time" content="2015-07-25T11:30:17.587Z">
+三、docu">
+<meta property="og:updated_time" content="2015-07-25T11:34:40.184Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="document.ready=function(){}和$(function(){})和window.onload=function(){}区别">
 <meta name="twitter:description" content="一、window.onload=function(){};
-
 是js原生写法，意思是带文档完全加载完毕后再执行其中的代码。
 只能写一个，各种函数都可以写在这里面。
 
 二、$(function(){})
-
 是依赖于jQuery的，是$(document).ready(function(){})的简写。
 不需要等文档完全加载，只需文章结构加载完就能执行其中的代码。
 可以写多个，按顺序执行。
 
-三、do">
+三、docu">
   
     <link rel="alternative" href="/atom.xml" title="web前端小屋" type="application/atom+xml">
   
@@ -237,7 +231,7 @@
   
     <div class="article-meta">
       <a href="/2015-07-25/document.ready=function(){}和$(function(){})和window.onload=function(){}区别/" class="article-date">
-  	<time datetime="2015-07-25T11:30:17.587Z" itemprop="datePublished">7月 25 2015</time>
+  	<time datetime="2015-07-25T11:34:40.184Z" itemprop="datePublished">7月 25 2015</time>
 </a>
     </div>
   
@@ -274,26 +268,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一、window.onload=function(){};</p>
-<ol>
+        <h2 id="一、window-onload=function(){};">一、window.onload=function(){};</h2><ol>
 <li>是js原生写法，意思是带文档完全加载完毕后再执行其中的代码。</li>
 <li>只能写一个，各种函数都可以写在这里面。</li>
 </ol>
-<p>二、$(function(){})</p>
-<ol>
+<h2 id="二、$(function(){})">二、$(function(){})</h2><ol>
 <li>是依赖于jQuery的，是$(document).ready(function(){})的简写。</li>
 <li>不需要等文档完全加载，只需文章结构加载完就能执行其中的代码。</li>
 <li>可以写多个，按顺序执行。</li>
 </ol>
-<p>三、document.ready=function(){}</p>
-<ol>
+<h2 id="三、document-ready=function(){}">三、document.ready=function(){}</h2><ol>
 <li>也是依赖于jQuery的。</li>
 <li>相当于：$(function(){})，但优先级没有：$(function(){})高，从下面的例子就可以看出：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="built_in">document</span>.ready=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">1</span>);</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">2</span>);</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		alert(<span class="number">3</span>);</span><br><span class="line">	&#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>输出的顺序为3 2 1</p>
-<p>四、(function(){})();</p>
-<p>注：如有不正确的地方和不完整之处，希望小伙伴们呢能给指正！</p>
+<h2 id="四、(function(){})();">四、(function(){})();</h2><p>注：如有不正确的地方和不完整之处，希望小伙伴们呢能给指正！</p>
 
         
       
