@@ -278,67 +278,6 @@
 
 
   
-    <article id="post-让超大banner图片不拉伸、全屏宽、居中显示的方法" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015-07-16/让超大banner图片不拉伸、全屏宽、居中显示的方法/" class="article-date">
-  	<time datetime="2015-07-16T11:15:40.069Z" itemprop="datePublished">7月 16 2015</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015-07-16/让超大banner图片不拉伸、全屏宽、居中显示的方法/">让超大banner图片不拉伸、全屏宽、居中显示的方法</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="方法一：">方法一：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>让超大banner图片不拉伸、全屏宽、居中显示的方法<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">        <span class="class">.bannerbox</span> <span class="rules">&#123;</span><br><span class="line">            <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line">            <span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;</span><br><span class="line">            <span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">            <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">525px</span></span></span>;<span class="comment">/*banner高度*/</span></span><br><span class="line">        &#125;</span></span><br><span class="line">        <span class="class">.banner</span> <span class="rules">&#123;</span><br><span class="line">            <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1600px</span></span></span>;<span class="comment">/*banner宽度*/</span></span><br><span class="line">            <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">            <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">            <span class="rule"><span class="attribute">margin-left</span>:<span class="value">-<span class="number">800px</span></span></span>;<span class="comment">/*负banner宽度的一半*/</span></span><br><span class="line">        &#125;</span></span><br><span class="line">    </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"bannerbox"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"banner"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"banner.jpg"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>注：把css中 .bannerbox 中 height 及 .banner 和 width 换成你banner图的大小，然后 .banner 中margin-left 的值改成banner图宽度的一半即可。</p>
-<h3 id="方法二：">方法二：</h3>
-        <hr/>
-        <p class="article-more-link">
-          <a  href="/2015-07-16/让超大banner图片不拉伸、全屏宽、居中显示的方法/#more">阅读全文 >></a>
-        </p>
-      
-    </div>
-    
-    <div class="article-info">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大banner居中/">大banner居中</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/htmlcss/">htmlcss</a>
-	</div>
-
-
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
     <article id="post-通过ssh方式连接到别人的远程仓库分支并且提交项目文件到该分支下" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -531,6 +470,65 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/others/">others</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-常见前端面试题集锦" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015-07-03/常见前端面试题集锦/" class="article-date">
+  	<time datetime="2015-07-03T12:38:03.736Z" itemprop="datePublished">7月 3 2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015-07-03/常见前端面试题集锦/">常见前端面试题集锦</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~">本文章收集了一些常见前端面试题，目的是为面试前端的小伙伴们提供一点小小的帮助，也为了勉励自己~</h2><p><ol><br>    <li>什么是HTML？</li><br>    <li>DOCTYPE的作用？严格模式与混杂模式，如何触发？</li><br>    <li>HTML语义化，以及好处。</li><br>    <li>HTML5新增的几个标签，flash和HTML5的优缺点。</li><br>    <li>ol dl ul 是什么东东？</li><br>    <li>对WEB标准的理解。</li><br>    <li>什么是web components？</li><br>    <li>HTTP请求有哪几种方法？HTTP报文理解一下。HTTP握手？</li><br>
+        <hr/>
+        <p class="article-more-link">
+          <a  href="/2015-07-03/常见前端面试题集锦/#more">阅读全文 >></a>
+        </p>
+      
+    </div>
+    
+    <div class="article-info">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端面试题/">前端面试题</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/htmlcss/">htmlcss</a>
 	</div>
 
 
